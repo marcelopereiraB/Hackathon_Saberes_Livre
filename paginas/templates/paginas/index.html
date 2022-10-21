@@ -3,28 +3,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina inicial</title>
+	<meta charset="utf-8">
+	<title>Xô Fome</title>
 
-    <link rel="stylesheet"  href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet"  href="{% static 'css/mormalize.css' %}">
+	<link rel="stylesheet"  href="{% static 'css/estilo.css' %}">
+	<!--INICIO BOOTSTRAP
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    -->
+    <!--FIM BOOTSTRAP-->
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+
 </head>
 <body>
-    <a class="nav-link" href="{% url 'vaquinha' %}"> 
-        <BUtton>vaquinha</BUtton>
-    </a>
-    <a class="nav-link" href="{% url 'ajuda' %}"> 
-        <BUtton>help</BUtton>
-    </a>
-    <img src="{% static 'img/pin.png' %}" width="200" alt="">
+	<div id="container"><!--INICIO CONTAINER-->
+		<header><!--INICIO HEADER-->
+			<div id="logo">
+				<h1><a href="">Xô Fome</a></h1>
+			</div>
 
+			<nav><!--INICIO NAV-->
+				<ul>
+					<li><a href="{% url 'doar' %}">Doações</a></li>
+					<li><a href="{% url 'peca ajuda' %}">Peça Ajuda</a></li>
+					<li><a href="{% url 'contato' %}">contato</a></li>
+					<li><a href="{% url 'login' %}">Login</a></li>
+				</ul>
+			</nav><!--FIM NAV-->
+		</header><!--FIM HEADER-->
 
- 
-  
+		<div id="principal"><!--INICIO PRINCIPAL-->
+			<div id="conteudo"><!--INICIO CONTEUDO-->
+				<section id="capa">
+					<img src="{% static 'img/prato-vazio.png' %}" height="320" width="710">
+				</section>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+			</div><!--FIM CONTEUDO-->
+
+			<aside>
+				<section id="depoimento">
+					<img src="{% static 'img/animacao.gif' %}" height="320" width="350" href="doacoes.html>
+				</section>
+			</aside>
+
+			<footer>
+				<p>
+					<a href="">Home</a>
+					<a href="">Doações</a>
+					<a href="">Contato</a>
+				</p>
+
+				<p>
+					2022 <a href="">Xô Fome</a> Todos os direitos reservados
+				</p>
+			</footer>
+		</div><!--FIM PRINCIPAL-->
+	</div><!--FIM CONTAINER-->
 </body>
 </html>
