@@ -1,6 +1,6 @@
 
 body {
-	background: #f4f2ec url(../img/fundo1.png) repeat-x;
+	background: #f4f2ec url(../img/fundo4.png) repeat-x;
 	font: 12px "Lucida Grande", Lucida Sans Unicod, Arial, sans-serif;
 }
 
@@ -24,11 +24,13 @@ a:hover {
 }
 
 #logo a {
-	width: 248px;
-	height: 21px;
+	width: 120px;
+	height: 65px;
 	text-indent: -9999px;
 	display: block;
-	background: url(../img/logo.png);
+	background: url(../img/unnamed.png);
+	position: absolute;
+	margin: -30px;
 }
 
 header {
@@ -174,15 +176,12 @@ legend {
 	display: none;
 }
 
-.form-group{
-	width: 700px; 
-    margin-left: 600;
-    margin-right:700;
-}
-.form-group form-check{
-	width: 600px; 
-    margin-left: 600;
-    margin-right:700;
-	
+/*PEÇA AJUDA*/
 
+#pecaajuda-nav {
+	float: center;
+}
+
+.texto-ajuda {
+	text-align: right;
 }

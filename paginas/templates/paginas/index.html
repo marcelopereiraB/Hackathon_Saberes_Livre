@@ -6,10 +6,10 @@
 	<meta charset="utf-8">
 	<title>Xô Fome</title>
 
-	<link rel="stylesheet"  href="{% static 'css/mormalize.css' %}">
-	<link rel="stylesheet"  href="{% static 'css/estilo.css' %}">
+	<link rel="stylesheet" href="{% static 'css/mormalize.css' %}">
+	<link rel="stylesheet" href="{% static 'css/estilo.css' %}">
 	<!--INICIO BOOTSTRAP
-	
+	<!--
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -32,7 +32,7 @@
 				<ul>
 					<li><a href="{% url 'doar' %}">Doações</a></li>
 					<li><a href="{% url 'peca ajuda' %}">Peça Ajuda</a></li>
-					<li><a href="{% url 'contato' %}">contato</a></li>
+					<li><a href="{% url 'contato' %}">Contato</a></li>
 					<li><a href="{% url 'login' %}">Login</a></li>
 				</ul>
 			</nav><!--FIM NAV-->
@@ -44,23 +44,44 @@
 					<img src="{% static 'img/prato-vazio.png' %}" height="320" width="710">
 				</section>
 
+				<br>
+				<br>
+
+				<section>
+					<h3>NOSSA MISSÃO</h3>
+					<p>
+						A existência de ONGs, que visam o bem-estar social de toda uma nação, demonstram ferozmente que o Estado, o qual deveria engendrar as diretrizes de uma melhor vida para a população, é ineficiente na realização do seu Dever Constitucional. Compreendendo o impacto social causado pelas ONGs surgiu o projeto XÔ Fome no intuito de aproximar as mesmas com instituições que desejam fazer parte de um projeto social e colaborar para a redução do cenário de fome visto em nosso país, essa iniciativa proporciona inclusive uma redução nos desperdícios alimentícios que ocorrem diariamente.
+					</p>
+				</section>
+
+				<section id="postagens">
+					<article>
+						<a href=""><img src="{% static 'img/parcerias.png' %}" height="200" width="1080" alt="Descrição Imagem"></a>
+					</article>
+
+				</section>
 			</div><!--FIM CONTEUDO-->
 
 			<aside>
 				<section id="depoimento">
 					<img src="{% static 'img/animacao.gif' %}" height="320" width="350" href="doacoes.html>
 				</section>
+
+				<section id="visita"><!--INICIO VISITA-->
+					
+				</section><!--FIM VISITA-->	
 			</aside>
 
 			<footer>
 				<p>
-					<a href="">Home</a>
-					<a href="">Doações</a>
-					<a href="">Contato</a>
+					<a href="{% url 'index' %}">Home</a>
+					<a href="{% url 'doar' %}">Doações</a>
+					<a href="{% url 'peca ajuda' %}">Peça Ajuda</a>
+					<a href="{% url 'contato' %}">Contato</a>
 				</p>
 
 				<p>
-					2022 <a href="">Xô Fome</a> Todos os direitos reservados
+					2022 <a href="">Xô Fome</a>Todos os direitos reservados
 				</p>
 			</footer>
 		</div><!--FIM PRINCIPAL-->

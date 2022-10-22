@@ -1,0 +1,29 @@
+
+body {
+  background: #f4f2ec url(../img/fundo4.png) repeat-x;
+  font: 12px "Lucida Grande", Lucida Sans Unicod, Arial, sans-serif;
+}
+
+#container {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#logo-peca-ajuda{
+  margin-top: 60px;
+}
