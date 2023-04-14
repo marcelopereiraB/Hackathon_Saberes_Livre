@@ -1,2 +1,2 @@
 # Hackathon_Saberes_Livre
-ONDE DESENVOLVI UMA APLICAÇÃO WEB PARA CAPTAR RECURSOS PARA ONGS DESTRIBUIR TAIS RECURSOS, A BASE DA IDEIA VEM DOS OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA ONU
+Onde desenvolvi uma APLICAÇÃO WEB com o intuito de captar recursos e redistribuir para ongs parceiras, a base da ideia vem dos OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL DA ONU numero 2(fome zero)
